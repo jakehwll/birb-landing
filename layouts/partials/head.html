@@ -1,0 +1,11 @@
+<head>
+
+    <title>Birb &mdash; An everything Discord Bot</title>
+
+    <link rel="shortcut icon" href="/avatar.png" type="image/x-png">
+
+	{{ with resources.Get "stylesheet.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint}}
+	<style>{{ .Content | safeCSS }}</style>
+    {{ end }}
+
+</head>
